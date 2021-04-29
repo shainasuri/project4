@@ -12,4 +12,4 @@ Then once they input their name and hit enter, one final text box would appear g
 </p>
 
 <h5>Link to Figma Sketches for reference:</h5>
-<a href="https://www.figma.com/file/Bk1rpm1aEein6Lww40dyHn/Project-4-Sketches?node-id=0%3A1">
+https://www.figma.com/file/Bk1rpm1aEein6Lww40dyHn/Project-4-Sketches?node-id=0%3A1"
