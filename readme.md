@@ -11,3 +11,5 @@ The idea is that once they choose an option, the next prompt would appear asking
 Then once they input their name and hit enter, one final text box would appear giving them a personalized food choice idea. This final result would show one element from the array of the category they chose. I'm thinking of picking the item based on the number associated with first letter of their names. <b>(this is the main challenge I need to work through)</b>
 </p>
 
+<h5>Link to Figma Sketches for reference:</h5>
+<a href="https://www.figma.com/file/Bk1rpm1aEein6Lww40dyHn/Project-4-Sketches?node-id=0%3A1">
