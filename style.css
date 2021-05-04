@@ -407,30 +407,92 @@ h1 {
     color: #858585b6;
     font-family: 'Yesteryear', cursive;
     font-size: 2rem;
-    padding: 4vh 0 3vh;
+    padding: 4vh 0 0;
     text-align: center;
     text-shadow: 0px -1px 0.5px rgba(29, 29, 29, 0.74);
     width: 100%;
+    
+}
+.prompt-3 {
+    color: #858585b6;
+    font-family: 'Yesteryear', cursive;
+    font-size: 2rem;
+    padding: 4vh 0 0;
+    text-align: center;
+    text-shadow: 0px -1px 0.5px rgba(29, 29, 29, 0.74);
+    width: 100%;
+    display: none;
+}
+
+.selected {
+    box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.25);
 }
 
 #moods {
     display: flex;
-    justify-content: space-around; 
-    flex-basis: 30%;
+    justify-content: center; 
+    flex-wrap: wrap;
     padding: 0;
+    flex: 1 1 20vh;
 }
 
 li {
+    align-items: center;
     background: linear-gradient(262.92deg, #FFC9A2 -10.44%, rgba(255, 255, 255, 0) 107.3%), #FFC4C2;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+    color: #858585b6;
+    display: flex;
     font-family: 'Jost', sans-serif;
     font-size: 1rem;
-    display: inline-block;
-    padding: 2vh;
+    padding: 1.3vh 2vh;
     list-style-type: none;
+    justify-content: center;
+    margin: 1vh;
+    text-align: center;
+    text-shadow: -0.5px -0.5px 0.5px rgba(29, 29, 29, 0.74);
+    border-radius: 10px;
+    user-select: none;
+   
 }
 
+li > p {
+    text-align: center;
+    margin: 0;
+}
+.flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+input {
+    border: none;
+    background: #B1DEDC;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    color: #858585b6;
+    font-family: 'Jost', sans-serif;
+    padding: 1vh;
+    margin: 2vh auto;
+    text-align: center;
+    text-shadow: -0.5px -0.5px 0.5px rgba(29, 29, 29, 0.74);
+}
 
-
+.enter-name {
+    display: none;
+}
+#final-result {
+    background: linear-gradient(257.9deg, #FFA2A2 9.51%, rgba(255, 255, 255, 0) 78.84%), #FFC4C2;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    margin: 5vw;
+}
+#name-result {
+    color: #858585b6;
+    font-family: 'Yesteryear', cursive;
+    font-size: 2rem;
+    text-align: center;
+    text-shadow: 0px -1px 0.5px rgba(29, 29, 29, 0.74);
+}
 /* MEDIA QUERIES */
 
 /* iPhone/Mobile Screen */

@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@200;400&family=Yesteryear&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer></script>
     <script src="script2.js" defer></script>
     <title>Welcome to The Kitchen</title>
 </head>
@@ -34,13 +35,44 @@
             <div class="fridge-border"></div>
             <div class="fridge-container-3">
                 <div class="prompt-2">Pick your mood</div>
-                <ul id="moods">
-
-                </ul>
-                <section>
-                    <div class="prompt-2">Enter your name</div>
-                    <input type="text" id="#name-input">
-                    <p id="#name-result"></p>
+                <section class="mood-magnets">
+                    <ul id="moods">
+                        <!-- <li>
+                            <p>super hungry</p>
+                        </li>
+                        <li>
+                            <p>snacky</p>
+                        </li>
+                        <li>
+                            <p>cheat food</p>
+                        </li>
+                        <li>
+                            <p>tired</p>
+                        </li>
+                        <li>
+                            <p>something healthy</p>
+                        </li>
+                        <li>
+                            <p>bored</p>
+                        </li>
+                        <li>
+                            <p>unwell</p>
+                        </li>
+                        <li>
+                            <p>midnight snack</p>
+                        </li>
+                        <li>
+                            <p>dessert</p>
+                        </li> -->
+                    </ul>
+                </section>
+                <section id="name-prompt" class="enter-name">
+                    <div class="flex">
+                        <div class="prompt-2">Enter your name</div>
+                        <input type="text" id="name-input">
+                        <p id="name-result"></p>
+                        <div id="final-result"></div>
+                    </div>
                 </section>
             </div>
             <div class="fridge-border"></div>
