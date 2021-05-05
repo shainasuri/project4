@@ -358,6 +358,8 @@ h1 {
 .fridge-container-3 {
     background: linear-gradient(162deg, #C8EFEC 2.31%, rgba(255, 255, 255, 0) 91.66%), #56ACA7;
     box-shadow: 3px 2px 10px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
     height: 90vh;
     width: 50vh;
     border-radius: 10px;
@@ -432,7 +434,7 @@ h1 {
     display: flex;
     justify-content: center; 
     flex-wrap: wrap;
-    padding: 0;
+    padding: 0 2vh;
     flex: 1 1 20vh;
 }
 
@@ -477,14 +479,21 @@ input {
     text-shadow: -0.5px -0.5px 0.5px rgba(29, 29, 29, 0.74);
 }
 
-.enter-name {
+.hidden {
     display: none;
 }
+
+
 #final-result {
     background: linear-gradient(257.9deg, #FFA2A2 9.51%, rgba(255, 255, 255, 0) 78.84%), #FFC4C2;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
     margin: 5vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 #name-result {
     color: #858585b6;
@@ -493,6 +502,15 @@ input {
     text-align: center;
     text-shadow: 0px -1px 0.5px rgba(29, 29, 29, 0.74);
 }
+#food-result {
+    color: #858585b6;
+    font-family: 'Jost', sans-serif;
+    font-size: 1rem;
+    text-align: center;
+    text-shadow: 0px -1px 0.5px rgba(29, 29, 29, 0.74);
+}
+
+
 /* MEDIA QUERIES */
 
 /* iPhone/Mobile Screen */
