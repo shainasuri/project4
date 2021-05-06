@@ -90,7 +90,7 @@ cheatFood.addEventListener("click", function(event){
 });
 tired.addEventListener("click", function(event){
     document.querySelector("#final-result").append(finalResult);
-    finalResult.innerText = "If you're feeling tired, try having some " + recommendations[5][Math.floor(Math.random() * recommendations[5].length)] + " to get some energy!";
+    finalResult.innerText = "If you're feeling tired, try having some " + recommendations[5][Math.floor(Math.random() * recommendations[5].length)] + " to refuel your energy!";
 });
 somethingHealthy.addEventListener("click", function(event){
     document.querySelector("#final-result").append(finalResult);
