@@ -113,6 +113,10 @@ dessert.addEventListener("click", function(event){
     finalResult.innerText = "In the mood for something sweet? Have some " + recommendations[8][Math.floor(Math.random() * recommendations[8].length)] + " to satisfy your sweet tooth!";
 });
 
+
+
+
+
 // console.log(recommendations[0][Math.floor(Math.random() * recommendations[0].length)]);
 
 // function showMoods () {

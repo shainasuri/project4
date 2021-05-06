@@ -2,7 +2,11 @@
     --border: 1px solid #303030;
     --yesteryear: 'Yesteryear', cursive;
     --jost: 'Jost', sans-serif;
+    --grey: #858585b6;
 }
+
+
+
 
 * {box-sizing: border-box;}
 
@@ -62,7 +66,6 @@ body {
     border-radius: 10px;
     height: 1.5vh;
     width: 50vh;
-    
 }
 .fridge-container {
     background: linear-gradient(162deg, #C8EFEC 2.31%, rgba(255, 255, 255, 0) 91.66%), #56ACA7;
@@ -72,7 +75,7 @@ body {
     width: 50vh;
 }
 .title {
-    font-family: 'Yesteryear', cursive;
+    font-family: var(--yesteryear);
     text-align: center;
     text-shadow: 0px -1px 0.5px rgba(29, 29, 29, 0.74);
 }
@@ -96,12 +99,13 @@ body {
 }
 .fridge-handle-1:hover, .fridge-handle-2:hover {
     box-shadow: 5px 5px 10px #ffc9a28c;
+    cursor: pointer;
 }
 .magnet {
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
-    color: #838383;
-    font-family: 'Jost', sans-serif;
+    color: var(--grey);
+    font-family: var(--jost);
     padding: 1.2vh 1vh;
     text-align: center;
     text-shadow: 0px -0.5px 0px rgba(43, 43, 43, 0.74);    
@@ -181,8 +185,8 @@ body {
     background: linear-gradient(180deg, #5AA9A4 -46.15%, rgba(255, 255, 255, 0) 219.23%), #B1DEDC;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
-    color: #858585b6;
-    font-family: 'Yesteryear', cursive;
+    color: var(--grey);
+    font-family: var(--yesteryear);
     font-size: 2rem;
     padding: 4vh 0 3vh;
     text-align: center;
@@ -197,10 +201,22 @@ body {
     height: 23%;
     width: 100%; 
 }
+.shelf-2 {
+    height: 10%;
+    width: 100%; 
+}
+.shelf-divider {
+    background: linear-gradient(180deg, #C3F8F5 -46.15%, rgba(255, 255, 255, 0) 219.23%), #006F69;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    height: 1vh;
+    width: 100%;
+}
 .food-containers {
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
     border-top: 10px solid #dfa9a9;
+    cursor: pointer;
 }
 #food-container-1 {
     background: #FFC4C2;
@@ -247,17 +263,6 @@ body {
     height: 70%;
     width: 20%;
 }
-.shelf-2 {
-    height: 10%;
-    width: 100%; 
-}
-.shelf-divider {
-    background: linear-gradient(180deg, #C3F8F5 -46.15%, rgba(255, 255, 255, 0) 219.23%), #006F69;
-    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 10px;
-    height: 1vh;
-    width: 100%;
-}
 .fridge-door {
     align-items: center;
     background: linear-gradient(162deg, #C8EFEC 2.31%, rgba(255, 255, 255, 0) 91.66%), #56ACA7;
@@ -268,7 +273,6 @@ body {
     justify-content: center;
     width: 45vh;
 }
-
 .fridge-door-inner {
     align-items: center;
     background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #EDDCDB;
@@ -282,7 +286,7 @@ body {
 }
 h1 {
     color: #7a7a7a;
-    font-family: 'Yesteryear', cursive;
+    font-family: var(--yesteryear);
     font-size: 2rem;
     text-shadow: 0px -1px 0.5px rgba(233, 233, 233, 0.815);
 }
@@ -290,8 +294,8 @@ h1 {
     background: #B1DEDC;
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
-    color: #818181;
-    font-family: 'Jost', sans-serif;
+    color: var(--grey);
+    font-family: var(--jost);
     font-size: 1rem;
     font-weight: bold;
     padding: 1.8vh 5vh 1.5vh 5vh;
@@ -308,64 +312,31 @@ h1 {
     padding: 1vh 2vh; 
     transform: rotate(2.11deg);
 }
-
 .button {
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
     border: none;
     color: #818181;
-    font-family: 'Jost', sans-serif;
+    cursor: pointer;
+    font-family: var(--jost);
     font-weight: bold;
     position: absolute;
     z-index: 1;
 }
 
-
-
-/* CHOICES PAGE */
+/* -------------------------------CHOICES.HTML------------------------------- */
 
 .main-container-3 {
     align-items: center;
     border: 3vh solid #00000000;
     background-clip: content-box;
-    justify-content: center;
     display: flex;
     flex: 1 1 auto;
     flex-direction: row;
     height: 100vh;
+    justify-content: center;
     max-width: 100vw;
     width: 100%;
-}
-
-.fridge-container-3 {
-    background: linear-gradient(162deg, #C8EFEC 2.31%, rgba(255, 255, 255, 0) 91.66%), #56ACA7;
-    box-shadow: 3px 2px 10px rgba(0, 0, 0, 0.25);
-    display: flex;
-    flex-direction: column;
-    height: 90vh;
-    width: 50vh;
-    border-radius: 10px;
-}
-
-.fridge-border-side {
-    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #929292;
-    height: 1.5vh;
-    width: 3vh;
-    border-radius: 10px;
-}
-.fridge-container-side {
-    background: linear-gradient(90deg, #C8EFEC 2.31%, rgba(255, 255, 255, 0) 91.66%), #56ACA7;
-    box-shadow: 3px 2px 10px rgba(0, 0, 0, 0.25);
-    height: 68.5vh;
-    width: 3vh;
-    border-radius: 10px;
-}
-.fridge-bottom-side {
-    background: linear-gradient(90deg, #9cdad4 2.31%, rgba(255, 255, 255, 0) 91.66%), #389c97;
-    border-radius: 10px;
-    box-shadow: 3px 2px 10px rgba(0, 0, 0, 0.25);
-    height: 20vh;
-    width: 3vh;
 }
 .top-handle {
     background: linear-gradient(90deg, #FFFFFF -37.12%, rgba(255, 255, 255, 0) 73.4%), #6F6F6F;
@@ -382,66 +353,37 @@ h1 {
     background: linear-gradient(180deg, #FFFFFF -37.12%, rgba(255, 255, 255, 0) 73.4%), #6F6F6F;
     border-radius: 10px;
     box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
-    /* margin-top: 10vh; */
-    width: 1vh;
     height: 2vh;
+    width: 1vh;
 }
-
-.prompt-2 {
-    color: #858585b6;
-    font-family: 'Yesteryear', cursive;
-    font-size: 2rem;
-    padding: 4vh 0 0;
-    text-align: center;
-    text-shadow: 0px -1px 0.5px rgba(29, 29, 29, 0.74);
-    width: 100%;
-    
-}
-.prompt-3 {
-    color: #858585b6;
-    font-family: 'Yesteryear', cursive;
-    font-size: 2rem;
-    padding: 4vh 0 0;
-    text-align: center;
-    text-shadow: 0px -1px 0.5px rgba(29, 29, 29, 0.74);
-    width: 100%;
-    display: none;
-}
-
-.selected {
-    box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.25);
-}
-
-#moods {
-    display: flex;
-    justify-content: center; 
-    flex-wrap: wrap;
-    padding: 0 2vh;
-    flex: 1 1 20vh;
-}
-
-li {
-    align-items: center;
-    background: linear-gradient(262.92deg, #FFC9A2 -10.44%, rgba(255, 255, 255, 0) 107.3%), #FFC4C2;
-    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
-    color: #858585b6;
-    display: flex;
-    font-family: 'Jost', sans-serif;
-    font-size: 1rem;
-    padding: 1.3vh 2vh;
-    list-style-type: none;
-    justify-content: center;
-    margin: 1vh;
-    text-align: center;
-    text-shadow: -0.5px -0.5px 0.5px rgba(29, 29, 29, 0.74);
+.fridge-border-side {
+    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #929292;
     border-radius: 10px;
-    user-select: none;
-   
+    height: 1.5vh;
+    width: 3vh;
 }
-
-li > p {
-    text-align: center;
-    margin: 0;
+.fridge-container-side {
+    background: linear-gradient(90deg, #C8EFEC 2.31%, rgba(255, 255, 255, 0) 91.66%), #56ACA7;
+    border-radius: 10px;
+    box-shadow: 3px 2px 10px rgba(0, 0, 0, 0.25);
+    height: 68.5vh;
+    width: 3vh;
+}
+.fridge-bottom-side {
+    background: linear-gradient(90deg, #9cdad4 2.31%, rgba(255, 255, 255, 0) 91.66%), #389c97;
+    border-radius: 10px;
+    box-shadow: 3px 2px 10px rgba(0, 0, 0, 0.25);
+    height: 20vh;
+    width: 3vh;
+}
+.fridge-container-3 {
+    background: linear-gradient(162deg, #C8EFEC 2.31%, rgba(255, 255, 255, 0) 91.66%), #56ACA7;
+    border-radius: 10px;
+    box-shadow: 3px 2px 10px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    width: 50vh; 
 }
 .flex {
     align-items: center;
@@ -449,47 +391,90 @@ li > p {
     flex-direction: column;
     justify-content: center;
 }
-input {
-    border: none;
-    background: #B1DEDC;
-    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 8px;
-    color: #858585b6;
-    font-family: 'Jost', sans-serif;
-    padding: 1vh;
-    margin: 2vh auto;
+.prompt-2 {
+    color: var(--grey);
+    font-family: var(--yesteryear);
+    font-size: 2rem;
+    padding: 4vh 0 0;
+    text-align: center;
+    text-shadow: 0px -1px 0.5px rgba(29, 29, 29, 0.74);
+    width: 100%;
+}
+#moods {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 20vh;
+    justify-content: center; 
+    padding: 0 2vh;
+}
+li {
+    align-items: center;
+    background: linear-gradient(262.92deg, #FFC9A2 -10.44%, rgba(255, 255, 255, 0) 107.3%), #FFC4C2;
+    border-radius: 10px;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+    color: var(--grey);
+    display: flex;
+    font-family: var(--jost);
+    font-size: 1rem;
+    justify-content: center;
+    list-style-type: none;  
+    margin: 1vh;
+    padding: 1.3vh 2vh;
     text-align: center;
     text-shadow: -0.5px -0.5px 0.5px rgba(29, 29, 29, 0.74);
+    user-select: none;
+}
+li > p {
+    margin: 0;
+    text-align: center;
+}
+input {
+    background: #B1DEDC;
+    border: none;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    color: var(--grey);
+    font-family: var(--jost);
+    margin: 2vh auto;
+    padding: 1vh;
+    text-align: center;
+    text-shadow: -0.5px -0.5px 0.5px rgba(29, 29, 29, 0.74);
+}
+.mood-magnet {
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
 }
 
 .hidden {
     display: none;
     transition: display 2s;
 }
-
+.selected {
+    box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.25);
+}
 
 #final-result {
+    align-items: center;
     background: linear-gradient(257.9deg, #FFA2A2 9.51%, rgba(255, 255, 255, 0) 78.84%), #FFC4C2;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
-    margin: 5vw;
-
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
+    margin: 5vw;
 }
 #name-result {
-    color: #858585b6;
-    font-family: 'Yesteryear', cursive;
+    color: var(--grey);
+    font-family: var(--yesteryear);
     font-size: 2rem;
     margin: 3.5vh 0;
     text-align: center;
     text-shadow: 0px -1px 0.5px rgba(29, 29, 29, 0.74);
 }
 #food-result {
-    color: #858585b6;
-    font-family: 'Jost', sans-serif;
+    color: var(--grey);
+    font-family: var(--jost);
     line-height: 1.5rem;
     font-size: 1rem;
     padding: 0 5vh 3vh;
@@ -500,15 +485,14 @@ input {
 .back-button {
     background: linear-gradient(106.72deg, #FBF4B7 -19.61%, rgba(255, 255, 255, 0) 105.79%), #FFC4C2;
     bottom: 10%;
+    cursor: pointer;
     padding: 1vh 2vh; 
 }
 
 
-/* MEDIA QUERIES */
+/* ---------------MEDIA QUERIES--------------- */
 
-/* iPhone/Mobile Screen */
 @media screen and (max-width: 1024px) {
-
     .fridge-container, .fridge-border, .fridge-bottom, .fridge-inner, .fridge-door, .fridge-container-3 {
         width: 40vh;
     }

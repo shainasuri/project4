@@ -13,27 +13,26 @@
     <title>Pick your Food Mood</title>
 </head>
 <body>
-   
     <div class="cursor"></div>
     <div class="main-container-3">
+        <!--------- side view of the fridge doors --------->
         <section>
             <div class="top-handle"></div>
             <div class="handle-divider"></div>
             <div class="bottom-handle"></div>
         </section>
-        <section class="fridge-door-side">
+        <section>
             <div class="fridge-border-side"></div>
-            <div class="fridge-container-side">
-            </div>
+            <div class="fridge-container-side"></div>
             <div class="fridge-border-side"></div>
             <div class="fridge-bottom-side"></div>
             <div class="fridge-border-side"></div>
         </section>
-
-
+        <!--------- side view of the main fridge body --------->
         <section class="fridge-side">
             <div class="fridge-border"></div>
             <div class="fridge-container-3">
+                <!-- name prompt -->
                 <section id="name-prompt">
                     <div class="flex">
                         <div class="prompt-2">Enter your name</div>
@@ -42,9 +41,9 @@
                         <p id="food-result"></p>
                     </div>
                 </section>
-             
+                <!--------- magnets & moods  --------->
                 <div class="prompt-2 hidden" id="prompt-2">Pick your mood</div>
-                <section class="mood-magnets">
+                <section>
                     <ul id="moods">
                         <li class="mood-magnet hidden" id="super-hungry">
                             <p>super hungry</p>
@@ -75,15 +74,12 @@
                         </li>
                     </ul>
                 </section>
+                <!---------- final output ---------->
                 <div id="final-result"></div>
-                
-                <div class="flex">
-                    <button class="button back-button" onclick="document.location='index.html'">bon appétit!</button>
-                </div>
+                <div class="flex"><button class="button back-button" onclick="document.location='index.html'">bon appétit!</button></div>
             </div>
             <div class="fridge-border"></div>
         </section>
     </div>
-    
 </body>
 </html>
