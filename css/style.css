@@ -26,7 +26,6 @@ html {
 
 /* reference for gradient animation: https://codepen.io/P1N2O/pen/pyBNzX */
 
-
 body {
     height: 100%;
     margin: 0;
@@ -35,7 +34,7 @@ body {
 }
 
 .cursor {
-    background:  url('./images/custom.svg');
+    background: url('../images/custom.svg');
     height: 50px;
     width: 50px;
     /* border: 2px solid blue; */

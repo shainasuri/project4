@@ -1,7 +1,7 @@
 <h1>Description of Project:</h1>
 <p>This interactive web experience is intended to help users with the common problem of deciding what to eat during the day. This project plays with the concept of hanging around your fridge, trying to make a decision about your next meal or snack. It is intended to let users play with this interactive site to get ideas about what they can eat.</p>
 
-<img src="project4_hillchart_shainasuri.png">
+<img src="./images/project4_hillchart_shainasuri.png">
 
 <p>
 This site is made of three pages. The first page is a simple introductory landing page. The main door handle allows the users to 'open' the fridge to see what's inside. <br><br>
