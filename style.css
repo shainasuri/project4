@@ -1,16 +1,14 @@
 :root {
     --border: 1px solid #303030;
+    --yesteryear: 'Yesteryear', cursive;
+    --jost: 'Jost', sans-serif;
 }
-
-/* font-family: 'Jost', sans-serif;
-font-family: 'Yesteryear', cursive; */
 
 * {box-sizing: border-box;}
 
-
 html {
-    background: linear-gradient(120.95deg, #FFBDBD, #FFE3CA, #FFBDBD, #FFE3CA);
-    /* animation: gradient 15s ease infinite; */
+    background: linear-gradient(120.95deg, #fdb0b0, #ffe0c6, #fcaeae, #ffcc9f);
+    animation: gradient 10s ease infinite;
     background-size: 400% 400%;
 }
 
@@ -36,15 +34,24 @@ body {
     padding: 0;
 }
 
+.cursor {
+    background:  url('./images/custom.svg');
+    height: 50px;
+    width: 50px;
+    /* border: 2px solid blue; */
+    position: absolute;
+    z-index: -1;
+}
+
 .main-container {
     align-items: center;
     border: 3vh solid #00000000;
     background-clip: content-box;
-    justify-content: center;
     display: flex;
     flex: 1 1 auto;
     flex-direction: column;
     height: 100vh;
+    justify-content: center;
     max-width: 100vw;
     width: 100%;
 }
@@ -53,16 +60,17 @@ body {
 /* -------------------------------- INDEX.HTML ---------------------------------------*/
 .fridge-border {
     background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #929292;
+    border-radius: 10px;
     height: 1.5vh;
     width: 50vh;
-    border-radius: 10px;
+    
 }
 .fridge-container {
     background: linear-gradient(162deg, #C8EFEC 2.31%, rgba(255, 255, 255, 0) 91.66%), #56ACA7;
     box-shadow: 3px 2px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
     height: 80vh;
     width: 50vh;
-    border-radius: 10px;
 }
 .title {
     font-family: 'Yesteryear', cursive;
@@ -87,10 +95,9 @@ body {
     width: 2vh;
     height: 30vh;
 }
-.fridge-handle-1:hover {
+.fridge-handle-1:hover, .fridge-handle-2:hover {
     box-shadow: 5px 5px 10px #ffc9a28c;
 }
-
 .magnet {
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
@@ -99,6 +106,7 @@ body {
     padding: 1.2vh 1vh;
     text-align: center;
     text-shadow: 0px -0.5px 0px rgba(43, 43, 43, 0.74);    
+    user-select: none;
 }
 .magnet-1 {
     background: linear-gradient(262.92deg, #FFC9A2 -10.44%, rgba(255, 255, 255, 0) 107.3%), #FFC4C2;
@@ -118,7 +126,6 @@ body {
     transform: rotate(5.11deg);
     width: 19vh;
 }
-
 .fridge-bottom {
     background: linear-gradient(25deg, #9cdad4 2.31%, rgba(255, 255, 255, 0) 91.66%), #389c97;
     border-radius: 10px;
@@ -126,7 +133,6 @@ body {
     height: 20vh;
     width: 50vh;
 }
-
 .fridge-handle-2 {
     background: linear-gradient(180deg, #FFFFFF -37.12%, rgba(255, 255, 255, 0) 73.4%), #6F6F6F;
     border-radius: 10px;
@@ -136,23 +142,21 @@ body {
     height: 2vh;
 }
 
-/* --------------------------------------page 2 */
+/* --------------------------------------FRIDGE.HTML---------------------------------- */
 
 .main-container-2 {
     align-items: flex-start;
     background-clip: content-box;
-    justify-content: center;
     display: flex;
+    justify-content: center;
     flex: 1 1 auto;
     flex-direction: column;
     height: 100vh;
 }
-
 .fridge-container-2 {
     display: flex;
     width: fit-content;
 }
-
 .fridge-inner {
     background: linear-gradient(162deg, #C8EFEC 2.31%, rgba(255, 255, 255, 0) 91.66%), #56ACA7;
     box-shadow: 3px 2px 10px rgba(0, 0, 0, 0.25);
@@ -163,7 +167,6 @@ body {
     justify-content: center;
     display: flex;
 }
-
 .fridge-inner-2 {
     background: linear-gradient(164.24deg, #FFFFFF -3.74%, rgba(255, 255, 255, 0) 102.26%), #8A8A8A;
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -175,7 +178,6 @@ body {
     width: 95%;
     height: 96%;
 }
-
 .prompt {
     background: linear-gradient(180deg, #5AA9A4 -46.15%, rgba(255, 255, 255, 0) 219.23%), #B1DEDC;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -188,7 +190,6 @@ body {
     text-shadow: 0px -1px 0.5px rgba(29, 29, 29, 0.74);
     width: 100%;
 }
-
 .shelf {
     align-items: flex-end;
     /* border: 1px solid; */
@@ -197,110 +198,95 @@ body {
     height: 23%;
     width: 100%; 
 }
-
 .food-containers {
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
     border-top: 10px solid #dfa9a9;
 }
-
 #food-container-1 {
     background: #FFC4C2;
     height: 40%;
     width: 30%;
 }
-
 #food-container-2 {
     background: #FFE3CA;
     height: 70%;
     width: 20%;
 }
-
 #food-container-3 {
     background: #FFD7D6;
     height: 60%;
     width: 25%;
 }
-
 #food-container-4 {
     background: #f7cfac;
     height: 70%;
     width: 20%;
 }
-
 #food-container-5 {
     background: #FFC4C2;
     height: 60%;
     width: 25%;
 }
-
 #food-container-6 {
     background: #FFBEB1;
     height: 40%;
     width: 30%;
 }
-
 #food-container-7 {
     background: #fcc3b8;
     height: 60%;
     width: 25%;
 }
-
 #food-container-8 {
     background:  #FFC9A1;;
     height: 40%;
     width: 30%;
 }
-
 #food-container-9 {
     background: #fae1c9;
     height: 70%;
     width: 20%;
 }
-
 .shelf-2 {
-    width: 100%; 
     height: 10%;
+    width: 100%; 
 }
-
 .shelf-divider {
     background: linear-gradient(180deg, #C3F8F5 -46.15%, rgba(255, 255, 255, 0) 219.23%), #006F69;
     box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
-    width: 100%;
     height: 1vh;
+    width: 100%;
 }
-
 .fridge-door {
     align-items: center;
-    justify-content: center;
-    display: flex;
     background: linear-gradient(162deg, #C8EFEC 2.31%, rgba(255, 255, 255, 0) 91.66%), #56ACA7;
     box-shadow: 3px 2px 10px rgba(0, 0, 0, 0.25);
-    height: 70vh;
-    width: 45vh;
     border-radius: 10px;
+    display: flex;
+    height: 70vh;
+    justify-content: center;
+    width: 45vh;
 }
 
 .fridge-door-inner {
+    align-items: center;
     background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #EDDCDB;
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 95%;
     height: 96%;
+    justify-content: center;
+    width: 95%;
 }
-
 h1 {
     color: #7a7a7a;
     font-family: 'Yesteryear', cursive;
     font-size: 2rem;
     text-shadow: 0px -1px 0.5px rgba(233, 233, 233, 0.815);
 }
-
 #cuisine {
     background: #B1DEDC;
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -311,19 +297,16 @@ h1 {
     font-weight: bold;
     padding: 1.8vh 5vh 1.5vh 5vh;
 }
-
 .close-fridge {
     background-color: rgba(0, 0, 0, 0);
     font-size: 0.8rem;
     margin: 5vh 0 0 79vh;
     padding: 1vh 1.5vh;
-  
 }
-
 .more-options {
     background: linear-gradient(106.72deg, #FBF4B7 -19.61%, rgba(255, 255, 255, 0) 105.79%), #FFC4C2;
     margin: 60vh 0 0 72vh;
-    padding: 1vh 3vh; 
+    padding: 1vh 2vh; 
     transform: rotate(2.11deg);
 }
 
@@ -462,6 +445,7 @@ li > p {
     margin: 0;
 }
 .flex {
+    align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -481,6 +465,7 @@ input {
 
 .hidden {
     display: none;
+    transition: display 2s;
 }
 
 
@@ -499,84 +484,76 @@ input {
     color: #858585b6;
     font-family: 'Yesteryear', cursive;
     font-size: 2rem;
+    margin: 3.5vh 0;
     text-align: center;
     text-shadow: 0px -1px 0.5px rgba(29, 29, 29, 0.74);
 }
 #food-result {
     color: #858585b6;
     font-family: 'Jost', sans-serif;
+    line-height: 1.5rem;
     font-size: 1rem;
+    padding: 0 5vh 3vh;
+    margin: 0;
     text-align: center;
-    text-shadow: 0px -1px 0.5px rgba(29, 29, 29, 0.74);
+    text-shadow: 0px -0.5px 0.5px rgba(29, 29, 29, 0.74);
+}
+.back-button {
+    background: linear-gradient(106.72deg, #FBF4B7 -19.61%, rgba(255, 255, 255, 0) 105.79%), #FFC4C2;
+    bottom: 10%;
+    padding: 1vh 2vh; 
 }
 
 
 /* MEDIA QUERIES */
 
 /* iPhone/Mobile Screen */
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 1024px) {
 
     .fridge-container, .fridge-border, .fridge-bottom, .fridge-inner, .fridge-door, .fridge-container-3 {
         width: 40vh;
     }
-
     .title-1 {
        font-size: 1.7rem; 
     }
-    
     .title-2 {
         font-size: 3rem; 
     }
-
    .magnet-3 {
     margin-left: 9vh;
    }
-
+   .cursor {
+       display: none;
+   }
+   .prompt, .prompt-2, .prompt-3, h1, #name-result{
+       font-size: 1.7rem;
+   }
+   .fridge-container-2 {
+        flex-direction: column;
+   }
+   .fridge-door{
+        height: 27vh;
+   }
+   .fridge-inner{
+    height: 60vh;
+   }
+   .fridge-door-inner {
+       height: 25vh;
+   }
+   .mobile-hidden {
+       display: none;
+   }
+   .more-options {
+        margin: 81vh 0 0 26vh;
+        padding: 1vh;
+   }
+   .close-fridge {
+        margin: 81vh 0 0 2vh;
+        padding: 1vh;
+   }
+   .button {
+    font-size: 0.6rem;
+   }
 }
 
 
-
-/* 
-.header {
-    display: flex;
-    flex: 1 1 auto;
-    justify-content: space-between;
-    left: 0%;
-    position: fixed;
-    overflow: hidden;
-    top: 0%;
-    width: 100vw;
-    padding: 2vh;
-    margin: 0; 
-    text-align: center;
-} 
-
-.header-text {
-    background-color: #fff;
-    padding: 0 2vh;
-}
-
-.footer {
-    bottom: 0%;
-    display: flex;
-    flex: 1 1 auto;
-    justify-content: space-between;
-    left: 0%;
-    overflow: hidden;
-    position: fixed;
-    min-width: 0;
-    padding: 2vh;
-    margin: 0;  
-    width: 100vw;
-}
-
-.footer-text-1 {
-    background-color: #fff;
-    padding: 1vh 2vh 0 0;
-}
-
-.footer-text-2 {
-    background-color: #fff;
-    padding: 1vh 0 0 2vh;
-}
-*/

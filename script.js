@@ -1,5 +1,14 @@
 console.log('welcome to the kitchen');
 
+
+let myCursor = document.querySelector(".cursor")
+document.addEventListener("mousemove", function(event){
+    // console.log(event);
+    myCursor.style.top = (event.pageY - 20) + "px";
+    myCursor.style.left = (event.pageX - 20) + "px";
+})
+
+
 // ------------------------------(FRIDGE.HTML) ------------------------------
 let cuisineResult = document.querySelector('#cuisine');
 let container_1 = document.querySelector('#food-container-1');
@@ -116,7 +125,6 @@ document.querySelectorAll('.food-containers').forEach(div => {
 //     foodContainers.style.boxShadow = "none";
 //     })
 // })  
-
 
 
 
